@@ -64,5 +64,61 @@ the actual house built from the architectural plan.
 
 """
 
-print(__doc__)
+# print(__doc__)
 
+
+
+class Dog:
+
+    # Class attribute
+    species = "Canis familiaris"
+
+    # Constructor
+    def __init__(self, name, breed):
+        self.name = name
+        self.breed = breed
+
+    # Method
+    def bark(self):
+        print(f"{self.name} says Woof!")
+
+
+# Creating objects
+my_dog = Dog("Buddy", "Golden Retriever")
+another_dog = Dog("Lucy", "Labrador")
+
+
+# Access instance attributes
+print(my_dog.name)
+print(another_dog.breed)
+
+
+# Call method
+my_dog.bark()
+
+
+# Access class attribute
+print(Dog.species)
+
+
+
+'''
+self Explained: Inside a class, self is like saying “this particular object.” It's
+a way for the object to refer to itself. It's always the first parameter in a
+method definition, but Python handles it automatically when you call the
+method. You don't type self when calling the method; Python inserts it for
+you.
+
+
+Class vs. Instance Attributes:
+
+Class Attributes: These are shared by all objects of the class. Like
+species in our Dog class. All dogs belong to the same species. They are
+defined outside of any method, directly within the class.
+
+Instance Attributes: These are specific to each individual object. name
+
+and breed are instance attributes. Each dog has its own name and breed.
+
+They are usually defined within the __init__ method.
+'''
