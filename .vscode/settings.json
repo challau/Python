@@ -5,5 +5,6 @@
     "code-runner.runInTerminal": true,
     "code-runner.clearPreviousOutput": true,
     "code-runner.showExecutionMessage": true,
-    "folder-color.pathColors": []
+    "folder-color.pathColors": [],
+    "python-envs.defaultEnvManager": "ms-python.python:system"
 }
