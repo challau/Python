@@ -24,7 +24,6 @@ print(new)
 
 print('\n')
 
-
 #Example with multiple iterables
 numbers1 = [1, 2, 3]
 numbers2 = [4, 5, 6]
